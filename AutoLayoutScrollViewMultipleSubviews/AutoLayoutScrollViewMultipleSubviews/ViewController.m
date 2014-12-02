@@ -19,7 +19,8 @@
     /*
      *  This will enable vertical scrolling.
      */
-    //self.content2HeightConstraint.constant = 200;
+    self.content2HeightConstraint.constant = 1000;
 }
+
 
 @end

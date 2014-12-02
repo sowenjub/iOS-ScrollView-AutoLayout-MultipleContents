@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4692214B1A2E05DE0022794A /* ViewWithTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4692214A1A2E05DE0022794A /* ViewWithTableController.swift */; };
 		5C75518C18DB439000A67F84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75518B18DB439000A67F84 /* Foundation.framework */; };
 		5C75518E18DB439000A67F84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75518D18DB439000A67F84 /* CoreGraphics.framework */; };
 		5C75519018DB439000A67F84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C75518F18DB439000A67F84 /* UIKit.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		469221491A2E05DD0022794A /* AutoLayoutScrollViewMultipleSubviews-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AutoLayoutScrollViewMultipleSubviews-Bridging-Header.h"; sourceTree = "<group>"; };
+		4692214A1A2E05DE0022794A /* ViewWithTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWithTableController.swift; sourceTree = "<group>"; };
 		5C75518818DB439000A67F84 /* AutoLayoutScrollViewMultipleSubviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutScrollViewMultipleSubviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C75518B18DB439000A67F84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5C75518D18DB439000A67F84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,8 +89,10 @@
 				5C75519D18DB439000A67F84 /* Main.storyboard */,
 				5C7551A018DB439000A67F84 /* ViewController.h */,
 				5C7551A118DB439000A67F84 /* ViewController.m */,
+				4692214A1A2E05DE0022794A /* ViewWithTableController.swift */,
 				5C7551A318DB439000A67F84 /* Images.xcassets */,
 				5C75519218DB439000A67F84 /* Supporting Files */,
+				469221491A2E05DD0022794A /* AutoLayoutScrollViewMultipleSubviews-Bridging-Header.h */,
 			);
 			path = AutoLayoutScrollViewMultipleSubviews;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				5C7551A218DB439000A67F84 /* ViewController.m in Sources */,
 				5C75519C18DB439000A67F84 /* AppDelegate.m in Sources */,
 				5C75519818DB439000A67F84 /* main.m in Sources */,
+				4692214B1A2E05DE0022794A /* ViewWithTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,10 +277,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -284,10 +295,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Prefix.pch";
 				INFOPLIST_FILE = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AutoLayoutScrollViewMultipleSubviews/AutoLayoutScrollViewMultipleSubviews-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
